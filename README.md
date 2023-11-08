@@ -1,7 +1,41 @@
 # C++: Student Database using Nested Structures
-Student Database using Structures (Nested) and procedural programming approach
+Student Database using Structures (Nested) and procedural programming approach<br>
+<br>
+The program has following structures:
+##### nameType:
+```
+  struct nameType {
+    string fname;
+    string lname;
+};
+```
+##### dateType:
+```
+  struct dateType {
+    string dob;
+    string doa;
+};
+```
 
-This program contains the following functions:<br/>
+##### marksType:
+```
+  struct marksType {
+    int marks[5];
+    int totalMarks;
+    double percentage;
+};
+```
+
+##### student (Contains nameType, dateType & marksType as data members):
+```
+  struct Student {
+    int regNo;
+    nameType name;
+    dateType date;
+    marksType record;
+};
+```
+This program contains the following functions:<br>
 #### readData():
 gets the number of students, data of each student and put them in the array.<br/>
 #### appendData():
